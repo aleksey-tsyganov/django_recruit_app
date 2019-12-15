@@ -1,0 +1,15 @@
+{% extends 'recruits/base.html' %}
+
+{% block content%}
+
+    <form method='POST'>
+        {% csrf_token %}
+        {{ form.management_form }}
+        {% for inst in form %}
+            <p>Statement: {{ inst.question }}</p>
+            <p>Are you agree? {{ inst.answer }}</p>
+        {% endfor %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'recruits/base.html' %}
+
+{% block content%}
+<div class="container">
+    <form  method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-default" type="submit" value="Next">
+    </form>
+</div>
+{% endblock %}
+

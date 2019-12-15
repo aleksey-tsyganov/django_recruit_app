@@ -1,0 +1,1 @@
+web: gunicorn recruiting_system.wsgi
