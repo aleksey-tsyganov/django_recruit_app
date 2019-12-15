@@ -3,7 +3,7 @@ from .models import Recruit, Answer, Planet
 
 
 class RecruitForm(forms.ModelForm):
-    city = forms.ModelChoiceField(queryset=Planet.objects.all())
+    planet = forms.ModelChoiceField(queryset=Planet.objects.all())
 
     class Meta:
         model = Recruit
