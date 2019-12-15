@@ -22,8 +22,8 @@ TEMPLATETAGS_DIR = os.path.join(BASE_DIR, 'templatetags')
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 't18xe$@e@3so&k5(kz&4ku@ju6zo$mcg$$umbb-3_j==h2g=f4'
-# SECRET_KEY = os.environ.get("DJANGO_SK")
+# SECRET_KEY = 't18xe$@e@3so&k5(kz&4ku@ju6zo$mcg$$umbb-3_j==h2g=f4'
+SECRET_KEY = os.environ.get("DJANGO_SK")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
