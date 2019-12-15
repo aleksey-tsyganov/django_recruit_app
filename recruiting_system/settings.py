@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("DJANGO_SK")
 # DEBUG = True
 DEBUG = (os.environ.get("DEBUG_VALUE") == "True")
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["recruits-app.herokuapp.com"]
 
 
 # Application definition
