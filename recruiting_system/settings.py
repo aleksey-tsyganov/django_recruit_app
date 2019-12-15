@@ -26,9 +26,10 @@ TEMPLATETAGS_DIR = os.path.join(BASE_DIR, 'templatetags')
 SECRET_KEY = os.environ.get("DJANGO_SK")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = (os.environ.get("DEBUG_VALUE") == "True")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['recruits-app.herokuapp.com']
 
 
 # Application definition
