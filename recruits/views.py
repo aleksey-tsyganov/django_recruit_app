@@ -44,7 +44,7 @@ def answer_create(request, pk):
 
 
 class MasterListView(ListView):
-    context_object_name = "masters" # Name, that can be used in template
+    context_object_name = "masters"
     model = Master
 
 
@@ -89,7 +89,7 @@ class RecruitStatusUpdateView(UpdateView):
         email_address = recruit.email
         subject = "Education"
         message = "You are enrolled"
-        from_email = settings.EMAIL_HOST_USER # Email and password must be specified in 'settings.py'
+        from_email = settings.EMAIL_HOST_USER
         send_mail(message=message, subject=subject, from_email=from_email, recipient_list=[email_address], fail_silently=False)
         return super(RecruitStatusUpdateView, self).form_valid(form)
 
