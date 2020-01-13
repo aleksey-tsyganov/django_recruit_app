@@ -3,10 +3,11 @@
 {% block content%}
     <form method="POST">
         {% csrf_token %}
-            <h2>Chose the {{ recruit }} as a recruit</h2>
-            <p>Chose your name from the list: {{ form.master }}</p>
-            <p>Put the mark to send email to recruit {{ form.status }}</p>
-        <input type="submit" class="btn btn-primary" value="Submit">
+            <h1>Chose the {{ recruit }} as a student</h1>
+            <div class="container" id="chose-recruit">
+                <h3>Chose your name from the list: {{ form.master }}</h3>
+                <h3>Put the mark to send email to recruit {{ form.status }}</h3>
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </div>
     </form>
-
 {% endblock %}

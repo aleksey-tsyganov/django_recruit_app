@@ -1,11 +1,11 @@
 {% extends 'recruits/base.html' %}
 
 {% block content%}
-    <h2>Recruit Detail</h2>
-    <p>Name: {{ recruit_detail.name }}</p>
-    <p>Age: {{ recruit_detail.age }}</p>
-    <p>Planet: {{ recruit_detail.planet }}</p>
+    <h1 align="center">Recruit Details</h1>
+    <p><h3>Name: {{ recruit_detail.name }}</h3></p>
+    <p><h3>Age: {{ recruit_detail.age }}</h3></p>
+    <p><h3>Planet: {{ recruit_detail.planet }}</h3></p>
 
     <a href="{% url 'answer_list' recruit_detail.id %}" class="btn btn-primary">Recruit's answers</a>
-    <a href="{% url 'update' recruit_detail.pk %}" class="btn btn-warning">Choose recruit</a>
+    <a href="{% url 'update' recruit_detail.pk %}" class="btn btn-warning">Choose as a Student</a>
 {% endblock %}

@@ -1,13 +1,16 @@
 {% extends 'recruits/base.html' %}
+{% load crispy_forms_tags %}
 
 {% block content%}
-
     <form method='POST'>
         {% csrf_token %}
         {{ form.management_form }}
+        <h1>Please, answer the questions</h1>
         {% for inst in form %}
-            <p>Statement: {{ inst.question }}</p>
-            <p>Are you agree? {{ inst.answer }}</p>
+            <div class="container" id="answer-form">
+                <h3>Statement: {{ inst.question }}</h3>
+                <h3>Are you agree? {{ inst.answer }}</h3>
+            </div>
         {% endfor %}
         <input type="submit" class="btn btn-primary" value="Submit">
     </form>

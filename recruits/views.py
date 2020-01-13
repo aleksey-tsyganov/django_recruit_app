@@ -82,6 +82,8 @@ class RecruitStatusUpdateView(UpdateView):
     context_object_name = 'recruit'
 
     def form_valid(self, form):
+        # masters = RecruitStatus.objects.get(master=self.kwargs["master"])
+        # if len(masters) >= 3:
         form.save()
 
         # Sending email

@@ -1,13 +1,13 @@
 {% extends 'recruits/base.html' %}
 
 {% block content%}
-    <h2>Answers of {{ answers.1 }}</h2>
+    <h2 align="center">Answers of {{ answers.1 }}</h2>
 
     {% for answer in answers %}
-        <p>
-            Question: {{ answer.question }}<br>
-            Answer: {{ answer.answer|yesno:"Yes,No" }}
-        </p>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-primary"> Question: {{ answer.question }}</li>
+            <li class="list-group-item"> Answer: {{ answer.answer|yesno:"Yes,No" }}</li>
+        </ul>
     {% endfor %}
 {% endblock %}
 

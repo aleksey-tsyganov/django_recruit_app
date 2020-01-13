@@ -1,11 +1,10 @@
 {% extends 'recruits/base.html' %}
 
 {% block content%}
-    <h1>Welcome to List of Masters </h1>
+    <h1>List of Masters</h1>
     <ol>
         {% for master in masters %}
-            <h2><li><a href="{% url 'recruit_list' master.id %}">{{ master.name }}</a></li></h2>
+            <h3><li><a href="{% url 'recruit_list' master.id %}">{{ master.name }}</a></li></h3>
         {% endfor %}
     </ol>
-
 {% endblock %}

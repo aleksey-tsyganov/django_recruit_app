@@ -1,0 +1,32 @@
+h1  {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #0D0630;
+}
+
+h3   {
+    font-family: 'Montserrat', sans-serif;
+    color: #EAEAEA;
+}
+
+body {
+    background-color: #EAEAEA;
+}
+
+
+.jumbotron{
+    margin: 10%;
+    background-color: #74B3CE;
+}
+
+li {
+    margin: 2%;
+}
+
+#answer-form {
+    margin-top: 5%;
+}
+
+#chose-recruit {
+    margin-top: 5%;
+}
